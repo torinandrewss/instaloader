@@ -599,7 +599,7 @@ class Post:
 
         .. versionadded:: 4.2.6"""
         if self.is_video:
-            return self._field('video_view_count')
+            return self._field('video_play_count') # 'video_play_count' is the accurate value for Reels
         return None
 
     @property
